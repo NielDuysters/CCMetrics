@@ -1,5 +1,10 @@
 <?php
 
+    /*
+        Author: Niel Duysters
+        email: contact@ndvibes.com
+    */
+
     include_once('../classes.php');
     include_once('../config.php');
     include_once('../data.php');

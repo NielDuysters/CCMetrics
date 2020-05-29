@@ -159,7 +159,6 @@
                             <tr>
                                 <th>Competences</th>
                                 <th>Metrics</th>
-                                <th>Displayname</th>
                                 <th>HR Competence</th>
                                 <th>Values</th>
                                 <!--<th id="th_dynamic"></th>-->

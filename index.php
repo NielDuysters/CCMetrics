@@ -1,4 +1,9 @@
 <?php
+/*
+    Author: Niel Duysters
+    email: contact@ndvibes.com
+*/
+
     include_once('php/data.php');
 ?>
 
@@ -9,7 +14,7 @@
             // Including head-contents (files, scripts, metadata,...)
             echo file_get_contents("partials/head.html");
         ?>
-        
+
         <style>
 
         </style>

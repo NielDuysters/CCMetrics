@@ -1,4 +1,8 @@
 <?php
+/*
+    Author: Niel Duysters
+    email: contact@ndvibes.com
+*/
 
     /*
      * File holding most classes used in this project

@@ -1,4 +1,9 @@
 <?php
+/*
+    Author: Niel Duysters
+    email: contact@ndvibes.com
+*/
+
 
     //ini_set('auto_detect_line_endings',TRUE);
     ini_set('display_errors', true);

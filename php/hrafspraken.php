@@ -1,5 +1,10 @@
 <?php
 
+/*
+    Author: Niel Duysters
+    email: contact@ndvibes.com
+*/
+
     include_once('config.php');
     include_once('data.php');
     $conn = new mysqli(HOST, USER, PASS, DTBS);

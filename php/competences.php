@@ -33,7 +33,7 @@
         $do_where = " WHERE ";
     }
 
-    $sql = "SELECT dd.ID, comp.competence, def.definition, def.displayname, hr.value, compv.value FROM definitiondetails dd INNER JOIN competences comp ON comp.id=dd.competence_id INNER JOIN definitions def on def.id=dd.definition_id INNER JOIN hrcompetences hr ON hr.id=dd.hrcompetence_id INNER JOIN competencevalues compv ON compv.id=dd.competencevalues_id" . $do_where . implode(" AND ", $where);
+    $sql = "SELECT dd.ID, comp.competence, def.definition, hr.value, compv.value FROM definitiondetails dd INNER JOIN competences comp ON comp.id=dd.competence_id INNER JOIN definitions def on def.id=dd.definition_id INNER JOIN hrcompetences hr ON hr.id=dd.hrcompetence_id INNER JOIN competencevalues compv ON compv.id=dd.competencevalues_id" . $do_where . implode(" AND ", $where);
     $stmt = $conn->prepare($sql);
 
     if (sizeof($binds) > 0) {
@@ -41,14 +41,13 @@
     }
 
     $stmt->execute();
-    $stmt->bind_result($id, $competence, $definition, $displayname, $hrcompetence, $competencevalue);
+    $stmt->bind_result($id, $competence, $definition, $hrcompetence, $competencevalue);
 
     while ($stmt->fetch()) {
         echo "
         <tr>
             <td>".$competence."</td>
             <td>".$definition."</td>
-            <td>".$displayname."</td>
             <td>".$hrcompetence."</td>
             <td>".$competencevalue."</td>
         </tr>

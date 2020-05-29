@@ -120,7 +120,6 @@
                             <tr>
                                 <th>ID</th>
                                 <th>Metrics</th>
-                                <th>Displayname</th>
                                 <th>Customer</th>
                                 <th>Details</th>
                             </tr>
